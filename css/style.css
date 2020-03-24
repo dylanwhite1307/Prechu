@@ -1,0 +1,792 @@
+@charset "UTF-8";
+/*****************************************************
+******************* ФАЙЛ СТИЛЕЙ **********************
+*****************************************************/
+/*****************************************************
+****************** ОБНУЛЯЮЩИЕ СТИЛИ ******************
+*****************************************************/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*****************************************************
+****************** МИКСИНЫ ******************
+*****************************************************/
+/*****************************************************
+****************** ПЕРЕМЕННЫЕ ******************
+*****************************************************/
+/*****************************************************
+********************** ШРИФТЫ ************************
+*****************************************************/
+@font-face {
+  font-family: "Segoe WPN";
+  src: url("../fonts/SegoeWPN.eot");
+  src: local("☺"), url("../fonts/SegoeWPN.woff") format("woff"), url("../fonts/SegoeWPN.ttf") format("truetype"), url("../fonts/SegoeWPN.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SegoeUI Light";
+  src: url("../fonts/SegoeUI-Light.eot");
+  src: local("☺"), url("../fonts/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI-Light.ttf") format("truetype"), url("../fonts/SegoeUI-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe WP Light";
+  src: url("../fonts/ofont.ru_Segoe WP Light.eot");
+  src: local("☺"), url("../fonts/ofont.ru_Segoe WP Light.woff") format("woff"), url("../fonts/ofont.ru_Segoe WP Light.ttf") format("truetype"), url("../fonts/ofont.ru_Segoe WP Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*****************************************************
+****************** BODY AND WRAPPER ******************
+*****************************************************/
+body {
+  background: #fff;
+  padding: 28px 0 35px 0;
+  font-family: "Segoe WPN";
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+/*****************************************************
+********************** Container *********************
+*****************************************************/
+/*****************************************************
+********************** Header ************************
+*****************************************************/
+.header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 0 9px 0;
+}
+
+.shape {
+  padding-top: 3px;
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 75px;
+  letter-spacing: 0.64px;
+  border-radius: 50%;
+  width: 53px;
+  height: 52px;
+  background-color: #5094f2;
+  text-align: center;
+  padding: 4px 17px 0 10px;
+  margin: 0 17px 0 30px;
+  position: relative;
+  top: -8px;
+}
+
+.logo {
+  color: #000000;
+  font-size: 49px;
+  letter-spacing: 0.42px;
+  font-family: "SegoeUI Light";
+  flex-grow: 1;
+  position: relative;
+  top: -6px;
+  left: -2px;
+}
+
+.menu-burger {
+  background-color: #5094f2;
+  border-radius: 5px;
+  margin-right: 26px;
+}
+.menu-burger span {
+  width: 58px;
+  height: 44px;
+  display: block;
+  color: #fff;
+  font-size: 75px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 37px;
+}
+
+/*****************************************************
+********************** Part2 *************************
+*****************************************************/
+.part2 {
+  background: url(../img/fon.png) 0 100%/auto auto no-repeat;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0 0 41px 0;
+}
+
+.part2-phone {
+  margin: 22px 2px 6px 37px;
+}
+
+.part2-text {
+  margin: 20px 70px 0px 66px;
+}
+
+.part2-text__text {
+  color: #ffffff;
+  font-family: "Segoe WP Light";
+  font-size: 23px;
+  line-height: 36px;
+  margin: 0 0 30px 0;
+}
+.part2-text__text h2 {
+  line-height: 44px;
+  font-size: 31px;
+}
+
+.part2-text-sign__sign {
+  color: #ffffff;
+  font-family: "Segoe WP Light";
+  font-size: 31px;
+  background: #5094f2;
+  height: 53px;
+  line-height: 53px;
+  display: inline-block;
+  padding: 0 13px 0 0px;
+}
+.part2-text-sign__sign span {
+  position: relative;
+  top: -5px;
+}
+.part2-text-sign__sign span:before {
+  content: "";
+  background: url(../img/sign.png) center no-repeat;
+  padding: 0 30px;
+  position: relative;
+  top: 5px;
+}
+
+/*****************************************************
+********************** PART 3  **********************
+*****************************************************/
+.part3 {
+  margin: 0 0 40px 0;
+}
+
+.contary {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  padding: 0px 0 0px 43px;
+}
+
+.contary.one {
+  padding: 0 0 18px 44px;
+}
+
+.contary.two {
+  padding: 31px 0 17px 43px;
+}
+
+.contary.three {
+  padding: 21px 0 22px 37px;
+}
+
+.contary__img {
+  padding: 0px 40px;
+  display: inline-block;
+}
+
+.contary-img {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.contary-img.one {
+  background: #5094f2;
+  width: 137px;
+  height: 136px;
+}
+
+.contary-img.two {
+  background: #d94748;
+  width: 138px;
+  height: 139px;
+}
+
+.contary-img.free {
+  background: #ebbb11;
+  width: 147px;
+  height: 147px;
+}
+
+.contary__text {
+  margin: 0 78px 0 23px;
+  display: inline-block;
+}
+.contary__text h2 {
+  color: #5094f2;
+  font-size: 34px;
+  padding: 0 0 10px 0;
+}
+.contary__text p {
+  color: #909090;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.contary.two .contary__text {
+  position: relative;
+  top: -4px;
+}
+.contary.two .contary__text h2 {
+  position: relative;
+  left: -5px;
+}
+
+.contary.three .contary__text {
+  position: relative;
+  top: -4px;
+}
+.contary.three .contary__text h2 {
+  position: relative;
+  left: -5px;
+}
+
+/*****************************************************
+********************** PART  4 **********************
+*****************************************************/
+.part4 {
+  margin: 0 0 46px 0;
+}
+
+.part4-img {
+  text-align: center;
+  color: #6f7173;
+  font-size: 42px;
+  margin: 0 0 15px 0;
+}
+.part4-img h2 {
+  margin: 0 0 40px 0;
+}
+
+.part4-text {
+  padding: 0 0px 0 77px;
+}
+.part4-text h2 {
+  color: #6f7173;
+  font-size: 34px;
+  margin: 0 0 20px 0;
+}
+.part4-text p {
+  color: #909090;
+  font-size: 17px;
+  line-height: 36px;
+}
+
+/*****************************************************
+********************** FOOTER   **********************
+*****************************************************/
+footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  color: #909090;
+  font-size: 15px;
+  border-top: 1px solid #e5e5e5;
+  padding: 33px 0 0 0;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 0 35px 0;
+}
+
+/*****************************************************
+******************* АДАПТИВ 639 >*********************
+*****************************************************/
+@media (max-width: 639px) {
+  .shape {
+    padding: 4px 17px 0 10px;
+    margin: 0 17px 0 15px;
+    position: relative;
+    top: -8px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .menu-burger {
+    margin-right: 15px;
+  }
+  .menu-burger span {
+    width: 53px;
+    height: 39px;
+    font-size: 70px;
+    line-height: 32px;
+  }
+
+  .part2 {
+    background: url(../img/fon.png) 0 0/cover no-repeat;
+    padding: 0 0px 40px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .part2-text-sign__sign {
+    font-size: 20px;
+    height: 43px;
+    line-height: 43px;
+  }
+  .part2-text-sign__sign span:before {
+    background-size: 45%;
+  }
+
+  .contary {
+    flex-direction: column;
+    padding: 0px 0 0px 0px;
+  }
+
+  .contary.one {
+    padding: 5px 10px;
+  }
+
+  .contary.two {
+    padding: 5px 10px;
+  }
+
+  .contary.three {
+    padding: 5px 10px;
+  }
+
+  .contary__text {
+    margin: 0;
+  }
+  .contary__text h2 {
+    text-align: center;
+  }
+
+  .part4-text {
+    padding: 0 15px 0 15px;
+  }
+}
+/*****************************************************
+******************* АДАПТИВ >314 *********************
+*****************************************************/
+@media (max-width: 314px) {
+  .part2-text-sign__sign {
+    font-size: 15px;
+    height: 45px;
+    line-height: 48px;
+    display: inline-block;
+    padding: 0 10px 0 0px;
+    overflow: hidden;
+  }
+  .part2-text-sign__sign span {
+    position: relative;
+    top: -5px;
+  }
+  .part2-text-sign__sign span:before {
+    content: "";
+    background: url(../img/sign.png) center no-repeat;
+    background-size: 30%;
+    padding: 10px 30px;
+    position: relative;
+    top: 2px;
+  }
+
+  .part2-phone {
+    margin: 20px 2px 6px 20px;
+  }
+
+  .part2-text {
+    margin: 20px 20px 0px 20px;
+  }
+
+  .shape {
+    padding: 4px 17px 0 10px;
+    margin: 0 17px 0 15px;
+    position: relative;
+    top: -8px;
+  }
+}
+/*****************************************************
+******************* АДАПТИВ <641 *********************
+*****************************************************/
+@media (min-width: 641px) {
+  .shape {
+    margin: 0 17px 0 80px;
+  }
+
+  .part2 {
+    background: url(../img/fon1.png) 0 100%/auto auto no-repeat;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+  }
+
+  .part4 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+  }
+}
+/*****************************************************
+******************* АДАПТИВ >923 **********************
+*****************************************************/
+@media (max-width: 922px) {
+  .menu-full-link {
+    display: none;
+  }
+
+  .part2-slaidl {
+    display: none;
+  }
+
+  .part2-slaidr {
+    display: none;
+  }
+}
+/*****************************************************
+******************* АДАПТИВ <923 **********************
+*****************************************************/
+@media (min-width: 923px) {
+  body {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 24px 0 44px 0;
+  }
+
+  .header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 0 21px 0;
+  }
+
+  .shape {
+    font-size: 64px;
+    width: 44px;
+    height: 44px;
+    padding: 4px 17px 0 8px;
+    margin: 0 17px 0 141px;
+    position: relative;
+    top: 0px;
+  }
+
+  .logo {
+    font-size: 42px;
+    flex-grow: 1;
+    position: relative;
+    top: 0px;
+    left: -4px;
+  }
+
+  .menu-burger {
+    display: none;
+  }
+
+  .menu-full-link {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 138px 0 0;
+  }
+  .menu-full-link a {
+    color: #6c6c6c;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    margin: 25px 0 0 42px;
+    position: relative;
+    display: inline-block;
+  }
+  .menu-full-link a:after {
+    content: "";
+    opacity: 0;
+    width: 110%;
+    height: 3px;
+    background-color: #5094f2;
+    position: absolute;
+    top: 38px;
+    left: 0;
+  }
+  .menu-full-link a:hover:after {
+    opacity: 1;
+  }
+  .menu-full-link a.active:after {
+    opacity: 1;
+  }
+  .menu-full-link a:first-child {
+    margin: 25px -8px 0 0px;
+  }
+
+  .part2 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: url(../img/fon1.png) 0 100%/auto auto no-repeat;
+  }
+
+  .part2-slaidl {
+    margin: 50px 0 0 92px;
+  }
+  .part2-slaidl:hover {
+    cursor: pointer;
+  }
+
+  .part2-slaidr {
+    margin: 50px 90px 0 0;
+  }
+  .part2-slaidr:hover {
+    cursor: pointer;
+  }
+
+  .part2-phone {
+    margin: 38px 104px 0px 60px;
+  }
+
+  .part2-text {
+    margin: 20px 0px 0px 0px;
+    flex-grow: 1;
+  }
+
+  .part2-text__text {
+    font-size: 26px;
+    line-height: 44px;
+  }
+  .part2-text__text h2 {
+    line-height: 60px;
+    font-size: 42px;
+  }
+
+  .part2-text-sign__sign {
+    font-size: 22px;
+    height: 41px;
+    line-height: 44px;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  .part2-text-sign__sign span:before {
+    content: "";
+    background-size: 23px;
+    padding: 0 11px;
+    margin: 0 11px;
+    top: 2px;
+  }
+
+  .part3 {
+    margin: -50px 0 91px 0px;
+    background: url(../img/Layer_6.png) 0 0/auto auto no-repeat;
+    padding: 50px 0 0 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contary {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border-bottom: 0px solid #cccccc;
+    padding: 0px 0 0px 0px;
+    margin: 22px 20px 0 20px;
+  }
+
+  .contary.one {
+    padding: 0px 0 0px 0px;
+  }
+
+  .contary.two {
+    padding: 0px 0px 0 0px;
+  }
+
+  .contary.three {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .contary__img {
+    padding: 0px 0px;
+  }
+
+  .contary-img.one {
+    width: 186px;
+    height: 186px;
+  }
+
+  .contary-img.two {
+    width: 186px;
+    height: 186px;
+  }
+
+  .contary-img.free {
+    width: 186px;
+    height: 186px;
+  }
+
+  .contary__text {
+    margin: 28px 0px 0 0px;
+    text-align: center;
+  }
+  .contary__text h2 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+  }
+  .contary__text p {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .contary.one .contary__text {
+    position: relative;
+    top: -4px;
+  }
+  .contary.one .contary__text h2 {
+    position: relative;
+    left: -5px;
+  }
+
+  .part4 {
+    margin: 0 0 46px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .part4-img {
+    text-align: center;
+    color: #6f7173;
+    font-size: 42px;
+    margin: 0 0 15px 0;
+  }
+  .part4-img h2 {
+    margin: 0 0 40px 0;
+  }
+
+  .part4-text {
+    padding: 45px 0px 0 77px;
+  }
+  .part4-text h2 {
+    color: #6f7173;
+    font-size: 34px;
+    margin: 0 0 20px 0;
+  }
+  .part4-text p {
+    color: #909090;
+    font-size: 17px;
+    line-height: 36px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
