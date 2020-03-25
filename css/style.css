@@ -381,6 +381,13 @@ footer {
   align-items: flex-end;
   margin: 0 0 35px 0;
 }
+footer a {
+  color: #909090;
+}
+footer a:hover {
+  color: #5094f2;
+  text-decoration: underline;
+}
 
 /*****************************************************
 ******************* АДАПТИВ 639 >*********************
@@ -460,33 +467,41 @@ footer {
 ******************* АДАПТИВ >314 *********************
 *****************************************************/
 @media (max-width: 314px) {
+  .part2 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+  }
+
   .part2-text-sign__sign {
-    font-size: 15px;
-    height: 45px;
-    line-height: 48px;
-    display: inline-block;
-    padding: 0 10px 0 0px;
-    overflow: hidden;
+    font-size: 22px;
+    height: 41px;
+    line-height: 44px;
+    border-radius: 3px;
+    width: 189px;
+    padding-left: 30px;
   }
   .part2-text-sign__sign span {
-    position: relative;
-    top: -5px;
+    margin-left: -20px;
   }
   .part2-text-sign__sign span:before {
     content: "";
-    background: url(../img/sign.png) center no-repeat;
-    background-size: 30%;
-    padding: 10px 30px;
-    position: relative;
+    background-size: 23px;
+    padding: 0px 11px;
+    margin: 0 10px;
     top: 2px;
   }
 
   .part2-phone {
-    margin: 20px 2px 6px 20px;
+    margin: 20px 2px 6px 10px;
   }
 
   .part2-text {
-    margin: 20px 20px 0px 20px;
+    margin: 20px 0px 0px 10px;
+    padding-right: 10px;
   }
 
   .shape {
@@ -496,6 +511,10 @@ footer {
     top: -8px;
   }
 }
+.part4-text {
+  padding: 0 15px 0 15px;
+}
+
 /*****************************************************
 ******************* АДАПТИВ <641 *********************
 *****************************************************/
@@ -514,6 +533,10 @@ footer {
     justify-content: center;
   }
 
+  .part2-text-sign__sign {
+    margin-bottom: 10px;
+  }
+
   .part4 {
     display: -webkit-box;
     display: -moz-box;
@@ -521,8 +544,13 @@ footer {
     display: -webkit-flex;
     display: flex;
     justify-content: center;
+    margin-left: 10px;
   }
 }
+.part4-text {
+  padding: 0 15px 0 15px;
+}
+
 /*****************************************************
 ******************* АДАПТИВ >923 **********************
 *****************************************************/
@@ -652,12 +680,12 @@ footer {
   }
 
   .part2-text__text {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 44px;
   }
   .part2-text__text h2 {
     line-height: 60px;
-    font-size: 42px;
+    font-size: 35px;
   }
 
   .part2-text-sign__sign {
@@ -665,13 +693,17 @@ footer {
     height: 41px;
     line-height: 44px;
     border-radius: 3px;
-    margin-left: 10px;
+    width: 189px;
+    padding-left: 30px;
+  }
+  .part2-text-sign__sign span {
+    margin-left: -20px;
   }
   .part2-text-sign__sign span:before {
     content: "";
     background-size: 23px;
-    padding: 0 11px;
-    margin: 0 11px;
+    padding: 0px 11px;
+    margin: 0 10px;
     top: 2px;
   }
 
